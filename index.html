@@ -5,15 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Personal Website</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-dGLlTQ8iX8L+q5I4LkO5z5lrbY+MWbA/jowbADmISNxdQFvR/2p1Q5TC8VI5/9dU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
 </head>
 <body>
 
     <!-- Navigation Bar -->
     <nav>
-        <a href="#" class="fa-solid fa-house">Home</a>
-        <a href="#" class="courses">Courses</a>
-        <a href="#" class="about">About</a>
+        <a href="#" class="house">Home</a>
+        <div class="dropdown">
+         <a href="#" class="dropbtn">Courses</a>
+          <div class="dropdown-content">
+            <a href="#">Study English</a>
+            <a href="#">Everyday English</a>
+            <a href="#">Travel English</a>
+            <a href="#">Business English</a>
+            <a href="#">ESP</a>
+            <a href="#">EAP</a>
+            <a href="#">English 4 Children</a>
+            <a href="#">Exam English</a>
+            <a href="#">English Club</a>
+          </div>
+         </div>
+
+        <a href="#" class="info">About</a>
         <a href="#" class="contact">Contact</a>
     </nav>
 
@@ -112,6 +126,7 @@
         <a href="#">Codepen</a>
         <a href="#">LinkedIn</a>
     </footer>
+    <!-- JavaScript used to make the banner go up on scrolling-->
     <script>
         var scrolled = false;
         window.addEventListener("scroll", function() {

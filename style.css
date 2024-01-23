@@ -29,8 +29,62 @@ nav {
 nav a {
   color: #fff;
   text-decoration: none;
-  margin: 0 50px;
+  margin: 0 30px;
   font-size: 1.3rem;
+}
+
+.dropbtn {
+  color: white;
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(249, 249, 249, 0.8);
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #448ba1;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 1rem;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  border: #448ba1 1px solid;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #448ba1;
+}
+
+nav a:hover {
+  background-color: #448ba1;
+  padding: 10px;
 }
 
 /* Banner */
@@ -233,6 +287,12 @@ a {
 
   
 @media screen and (min-width: 769px) and (max-width: 1319px) {
+
+  nav {
+    flex-direction: column;
+    text-align:start;
+    padding: 10px;
+  }
  
   #banner {
     background-position: center;
@@ -298,19 +358,16 @@ a {
 
   nav {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     text-align: center;
     padding: 10px;
   }
-  
+
   #banner {
     height: 200px;
     top: 50px;
     position: relative;
   }
 
-  
   h1 {
     color: white;
     font-size: 3rem;
@@ -335,6 +392,10 @@ a {
     margin-bottom: -20px;
   }
 
+  .card-container p {
+    display: none;
+  }
+
   .card {
     width: 95%;
     height: 450px;
@@ -345,18 +406,8 @@ a {
   .card img {
     width: 100%;
     height: 65%;
-    object-fit: fill;
-  }
-
-  .card p {
-    display: none;
-  }
-
-  .card h2 {
-    font-size: 2rem;
-  }
-
-  .card-container + .card-container {
+    object-fit: f.courses {
+    }ard-container {
     margin-top: 0;
   }
 
@@ -367,6 +418,6 @@ a {
     transform: translateX(0);
     margin: 10px;
   }
+}.courses {
+  background: blue;
 }
-
-
