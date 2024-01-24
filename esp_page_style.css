@@ -1,0 +1,246 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Poppins&display=swap');
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('images/background.jpg');
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  /* Navigation Bar */
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    z-index: 1000;
+    background-color: rgba(150, 197, 191, 0.8); 
+    border-bottom: 7px solid;
+    border-image: linear-gradient(to right, #fff5c9, #96c5bf);
+    border-image-slice: 1;
+    color: #fff;
+    text-align: right;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 30px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: 'Lemon', cursive;
+    color: #e96e3a;
+    text-shadow: #fff 1px 1px 1px;
+}
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 30px;
+    font-size: 1.3rem;
+  }
+  
+  .dropbtn {
+    color: white;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none; /* Dropdown Content (Hidden by Default) */
+    position: absolute;
+    background-color: rgba(249, 249, 249, 0.8);
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+  }
+  
+  .dropdown-content a {
+    color: #448ba1;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1rem;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+    border: #448ba1 1px solid;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #448ba1;
+  }
+  
+  nav a:hover {
+    background-color: #448ba1;
+    padding: 10px;
+  }
+
+/* Main */
+
+  
+  #esp-content {
+    width: 80%;
+    text-align: center;
+    padding: 20px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    background-color: rgba(244, 237, 229, 0.8);
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  #esp-content h1 {
+    color: #e96e3a;
+    font-family: 'Lemon', cursive;
+    font-size: 2.5rem;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 15px;
+  }
+
+  .buy-now-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    background-color: #e96e3a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.buy-now-btn:hover {
+    background-color: #d25929;
+}
+  
+  /* Footer */
+  footer {
+    background-color: #7d7b7b;
+    color: #fff;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 20px;
+    width: 100%;
+    bottom: 20px;
+    background-color: rgba(182, 180, 178, 0.5);
+    border-top: 1px solid rgb(109, 109, 108);
+  }
+  
+  .social-icon {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 2rem;
+  }
+  
+  .social-icon i {
+    transition: color 0.3s ease;
+  }
+  
+  .social-icon:hover i {
+    color: #448ba1;
+  }
+  
+  /* Media Queries */
+  @media screen and (min-width: 1320px){
+
+    img {
+      width: 70%;
+      height: auto;
+      margin: 20px 0;
+      border-radius: 15px;
+    }
+
+  } 
+
+  @media screen and (min-width: 769px) and (max-width: 1319px) {
+
+    img {
+      width: 90%;
+      height: auto;
+      margin: 20px 0;
+      border-radius: 15px;
+    }
+
+  }
+
+  @media (max-width: 768px) {
+    nav {
+      align-items: center;
+      justify-content: space-around;
+    }
+  
+    nav a {
+      margin: 10px 0;
+    }
+  
+    .dropdown-content {
+      min-width: 100%;
+    }
+  
+    .dropdown-content a {
+      font-size: 1.2rem;
+    }
+  
+    .logo {
+      margin: 0;
+    }
+  
+    #esp-content {
+      width: 100%;
+    }
+  
+    #esp-content h1 {
+      font-size: 2rem;
+    }
+  
+    img {
+      width: 100%;
+      height: auto;
+      margin: 20px 0;
+      border-radius: 15px;
+    }
+  
+    footer {
+      font-size: 1rem;
+    }
+  }
