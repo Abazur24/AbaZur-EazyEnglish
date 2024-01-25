@@ -431,6 +431,14 @@ aside {
     font-size: 1.2rem;
   }
 
+  .dropdown-content a{
+    text-align: left;
+  }
+
+  .dropdown-content {
+    text-align: left;
+  }
+
   #banner {
     height: 200px;
     top: 50px;
